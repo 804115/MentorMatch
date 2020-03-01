@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block content %}
+   <section class = "info">
+     <div class= "benefits">
+         <h2 >Make a difference and become a mentor!</h2>
+         <ul class="infolist">
+           <li>
+               "Help students learn more about your field!"
+           </li>
+           <li>
+               "Gain more leadership experience!"
+           </li>
+           <li>
+               "Deepen your own personal knowledge."
+           </li>
+         </ul>
+     </div>
+       <div class="register">
+           <form action="/register" method="POST">
+               <p>
+                   Name: <input id = name type="text" name="name" />
+               </p>
+               <p>
+                   Age: <input id = age type="text" name="age" />
+               </p>
+               <p>
+                   Occupation: <input id = occupation type="text" name="occupation" />
+               </p>
+               <p>
+                   Email: <input id = email type="text" name="email" />
+               </p>
+               <p>
+                   Password: <input id = pass type="text" name="password" />
+               </p>
+               <input type="submit" value="Register" />
+           </form>
+       </div>
+       <div class="login">
+           <form action="/login" method="POST">
+               <p>
+                   Email: <input type="text" email="email" />
+               </p>
+               <p>
+                   Password: <input type="text" email="password" />
+               </p>
+               <input type="submit" value="Login" />
+           </form>
+       </div>
+
+
+{% endblock %}

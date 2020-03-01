@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+   <section class = "info">
+     <div class= "benefits">
+         {% for match in matches %}
+         <p class="match">
+             {{match}}
+         </p>
+         {% endfor %}
+     </div>
+{% endblock %}
